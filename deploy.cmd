@@ -106,10 +106,11 @@ IF EXIST "%DEPLOYMENT_TARGET%\package.json" (
 )
 
 :: 4. Create Hubot file with a coffee extension
-echo "doing some hubot coffee copying"
+echo "doing some hubot coffee copying %DEPLOYMENT_TARGET%\node_modules\hubot\bin\hubot to %DEPLOYMENT_TARGET%\node_modules\hubot\bin\hubot.coffee"
 copy /Y "%DEPLOYMENT_TARGET%\node_modules\hubot\bin\hubot" "%DEPLOYMENT_TARGET%\node_modules\hubot\bin\hubot.coffee"
 
 :: 5. Create App_Data from brain data
+echo "doing some hubot other app data stuff"
 IF NOT EXIST "%DEPLOYMENT_TARGET%\App_Data" MD "%DEPLOYMENT_TARGET%\App_Data"
 
 ::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::
