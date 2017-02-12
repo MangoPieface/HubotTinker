@@ -5,6 +5,7 @@
   "hubot-google-translate",
   "hubot-pugme",
   "hubot-maps",
+  "hubot-azure-scripts/brain/storage-blob-brain",
   "hubot-redis-brain",
   "hubot-rules",
   "hubot-shipit"
