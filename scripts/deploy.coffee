@@ -16,3 +16,6 @@ module.exports = (robot) ->
         .header('aeg-sas-key', projectKey)
         .post(data) (err, response, body) ->
         #test
+
+        res.reply "Deploying!"
+    
